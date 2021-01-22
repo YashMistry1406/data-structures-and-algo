@@ -28,7 +28,3 @@ if __name__=='__main__':
     tree=Insert(tree,3)
 
 
-
-
-
-

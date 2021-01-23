@@ -5,6 +5,7 @@ fun main()
   for (index in itesms)
   {
     println("$itesms[index]")
+      
   }
 
 }

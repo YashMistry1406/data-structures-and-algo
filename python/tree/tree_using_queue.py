@@ -43,6 +43,79 @@ def Insert(root,data):
 
 
 
+
+#finding the minimum in the tree
+def findMin(root):
+    if(root ==None):
+        print("not found")
+        return -1
+    temp=root.data
+    left_min=findMin(root.left)
+    right_min=findMin(root.right)
+    if left_min<temp:
+        temp=left_min
+    else:
+        temp=right_min
+    return temp
+
+
+#insert maxfor finding a max form the tree 
+
+#def findMin(root):
+#    if(root ==None):
+#        print("not found")
+#        return -1
+#    temp=root.data
+#    left_min=findMin(root.left)
+#    right_min=findMin(root.right)
+#    if left_min<temp:
+#        temp=left_min
+#    else:
+#        temp=right_min
+#    return temp
+
+
+
+
+
+
+#Height of node – The height of a node is the number of edges on the longest downward path 
+#between that node and a leaf.
+#depth =height-1
+#
+def FindHeight(root):
+    if(root ==None):
+        return -1
+    return max(FindHeight(root.right),FindHeight(root.left))+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__=='__main__':
+
+    tree=Node(1)
+    tree=Insert(tree,2)
+    tree=Insert(tree,3)
+
 #tree=BinaryTree(1)
 #tree.root.left = Node(2)
 #tree.root.right = Node(3)
@@ -50,10 +123,3 @@ def Insert(root,data):
 #tree.root.left.right = Node(5)
 #tree.root.right.left = Node(6)
 #tree.root.right.right = Node(7)
-if __name__=='__main__':
-
-    tree=Node(1)
-    tree=Insert(tree,2)
-    tree=Insert(tree,3)
-    
-

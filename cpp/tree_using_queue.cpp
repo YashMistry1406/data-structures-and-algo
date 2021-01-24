@@ -143,6 +143,17 @@ bool search_value(Node* root ,int data)
 //
 //
 //
+int FindHeight(struct Node *root)
+{
+    if(root ==NULL)
+    {
+        return -1;
+
+    }
+    return max(FindHeight(root->left),FindHeight(root->right))+1;
+
+}
+
 
 
 

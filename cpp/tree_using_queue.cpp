@@ -156,6 +156,37 @@ int FindHeight(struct Node *root)
 
 
 
+//TREE TRAVERSAL 
+//LEVEL ORDER 
+
+void level_order(Node *root)
+{
+    if (root==NULL)return;//cheking if the tree is empty and returnnull
+                          
+    queue<Node*> Q;//creating a queue of the tyoe node 
+    Q.push(root);//inserting the root in the tree 
+
+    while(!Q.empty())  /*unless and until the leaf is null or the 
+                         next node is null we continue to search in 
+                         the decided direction unless */
+
+
+    {                                                                      
+        Node* current=Q.front();                             /*creating a node and and adding the first element in the 
+                                                               current variable so that we can print or parse through it */
+                                                            
+        cout<<current->data<<" ";                              /*inserting the sdata from the node to the queue 
+                                                                 and popin it in the end to make way for the another 
+                                                                 node this is done as queue is FIFO and we can access the all the 
+                                                                 elementonly at the 1st postion of the queue */
+        if (current->left!=NULL)Q.push(current->left);         /*the next two lines pushes the node and its leaf to the queue or 
+                                                                 rather their address which are then printed by the above command 
+                                                                 */
+        if(current->right!=NULL) Q.push(current->right );
+        Q.pop(); /*it is used to clear the first element and push the necxt node address to the first postion to be accessed */
+    }
+}
+
 
 
 
@@ -172,16 +203,17 @@ int main()
     root=Insert(root,50);
     root=Insert(root,90);
     int number;
-    cout<<"enter a number ";
-        cin>>number;
-    if (search_value(root,number)==true)
-    {
-        cout<<"found\n";
-            
-    }
-    else {
-    cout<<"Not found \n";
-    }
+    //cout<<"enter a number ";
+    //    cin>>number;
+    //if (search_value(root,number)==true)
+    //{
+    //    cout<<"found\n";
+    //        
+    //}
+    //else {
+    //cout<<"Not found \n";
+    //}
+    level_order(root);
     
     
 //    cout << "Maximum element is " << findMax(root) << endl; 

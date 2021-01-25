@@ -91,6 +91,7 @@ def FindHeight(root):
 
 
 
+def pre_oreder(root):
 
 
 

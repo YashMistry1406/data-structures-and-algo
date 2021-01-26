@@ -187,6 +187,47 @@ void level_order(Node *root)
     }
 }
 
+void pre_order(struct Node *root)
+{
+
+    if (root==NULL) return;
+    cout<<root->data;
+    pre_order(root->left);
+    pre_order(root->right);
+}
+void inorder(Node *root)
+{
+    if (root==NULL) return;
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+}
+void postorder(Node *root)
+{
+    if(root==NULL) return;
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<" ";
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

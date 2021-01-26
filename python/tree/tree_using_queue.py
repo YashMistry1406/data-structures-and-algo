@@ -91,7 +91,21 @@ def FindHeight(root):
 
 
 
-def pre_oreder(root):
+def level_order(root):
+    if(root == None):
+        return;
+    queue=[]
+    queue.append(root)
+    while(len(queue)>0):
+        print(queue[0].data)
+        node=queue.pop()
+        if node.right is not None:
+            queue.append(node.right)
+        if node.left is not None:
+            queue.append(node.left)
+
+
+
 
 
 

@@ -106,8 +106,28 @@ def level_order(root):
 
 
 
+def preorder(root):
+    if root==None:
+        return
+    print(root.data)
+    preorder(root.left)
+    preorder(root.right)
+
+def postorder(root):
+    if root==None:
+        return
+    postorder(root.left)
+    preorder(root.right)
+    print(root.data)
 
 
+def inorder(root):
+    if root==None:
+        return
+    inorder(root.left)
+    print(root.data)
+
+    inorder(root.right)
 
 
 

@@ -10,7 +10,11 @@ fun main(args: Array<String>) {
     personobj.name="Yash"
     println(personobj.name)
 
-    val sc=Scanner(System.`in`)
+    val sc=Scanner(System.`in`)/*creating a variable of the scanner classjsut like java 
+                                */
+    
+                            
+                             
     println("enter age")
     var age=sc.nextInt()
     print(age)

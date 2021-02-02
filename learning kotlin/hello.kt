@@ -1,4 +1,5 @@
 import java.util.Scanner
+
 fun main(args: Array<String>) {
     val array = intArrayOf(1, 2, 3, 4, 5)    
     for (element in array) {
@@ -15,35 +16,35 @@ fun main(args: Array<String>) {
     
                             
                              
+    
     println("enter age")
     var age=sc.nextInt()
     print(age)
-
-    var r=1..10
-    println(r)
+//
+//    when(age){
+//        in 10..50->println("legal age")
+//        else ->
+//            {
+//                println("illegal age")
+//            }
+//
+//    }
+    var allowed:String=when(age)
+    {
+        
+        in 10..50->"legal age"
+        else ->
+            {
+                "illegal age"
+            }
+    
+        
+    }
+    println(allowed)
+//("    labelled for loop in kotlin where we can assign loop 
+    
 
 
     
         
 }
-//fun main() {
-//
-//infix fun Int.times(str: String) = str.repeat(this)        // 1
-//println(2 times "Bye ")                                    // 2
-//
-//val pair = "Ferrari" to "Katrina"                          // 3
-//println(pair)
-//
-//infix fun String.onto(other: String) = Pair(this, other)   // 4
-//val myPair = "McLaren" onto "Lucas"
-//println(myPair)
-//
-//val sophia = Person("Sophia")
-//val claudia = Person("Claudia")
-//sophia likes claudia                                       // 5
-//}
-//
-//class Person(val name: String) {
-//val likedPeople = mutableListOf<Person>()
-//infix fun likes(other: Person) { likedPeople.add(other) }  // 6
-//}

@@ -117,7 +117,7 @@ def postorder(root):
     if root==None:
         return
     postorder(root.left)
-    preorder(root.right)
+    postorder(root.right)
     print(root.data)
 
 

@@ -1,0 +1,7 @@
+
+class person()
+{
+    
+    var name=""
+    
+}

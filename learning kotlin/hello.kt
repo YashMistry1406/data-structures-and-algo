@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
     var personobj=person()
     personobj.name="Yash"
     println(personobj.name)
+    
 
     val sc=Scanner(System.`in`)/*creating a variable of the scanner classjsut like java 
                                 */

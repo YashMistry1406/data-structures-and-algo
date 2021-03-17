@@ -1,6 +1,5 @@
 def gridTraveller(m,n,memory={}):
     key=str(m) +','+str(n)
-    print(memory)
     if key in memory:
         return memory[key]
     if m==1 and n==1:

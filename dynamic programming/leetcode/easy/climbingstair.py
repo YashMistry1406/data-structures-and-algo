@@ -12,6 +12,9 @@ class Solution:
 
             memo[n]=solve(n-1,memo)+solve(n-2,memo)
 
+
             return memo[n]
+
         return solve(n,memo={})
+        print(memo)
 

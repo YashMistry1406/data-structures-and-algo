@@ -18,7 +18,7 @@ def howsum(targetsum,numbers,memo={}):
             memo[targetsum]=result.append(num)
             return memo[targetsum]
     memo[targetsum]=None
-    return memo[targetsum]
+    return None
 
 n=int(input())
 num=list(map(int,input().split()))

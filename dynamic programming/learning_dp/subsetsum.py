@@ -14,6 +14,8 @@ def subset(stack,n,target):
 
     for i in range(1, n + 1):
         for j in range(1, target+ 1):
+
+            print(j)
             if j<stack[i-1]:
                 memo[i][j] = memo[i-1][j]
             if j>= stack[i-1]:
@@ -24,7 +26,7 @@ if __name__=='__main__':
     stack= [3, 34, 4, 12, 5, 2]
     target=9
     n = len(stack)
-    subset(stack,n,target)
+    print(subset(stack,n,target))
 '''
  sum        0    1    2    3    4    5    6
 array elements

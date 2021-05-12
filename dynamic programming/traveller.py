@@ -8,6 +8,7 @@ def gridTraveller(m,n,memory={}):
         return 0
 
     memory[key]=(gridTraveller(m-1,n,memory)+gridTraveller(m,n-1,memory))
+    print(memory)
     return memory[key]
 if __name__ == "__main__" :
     m,n=map(int,input().split())

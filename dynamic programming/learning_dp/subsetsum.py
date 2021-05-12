@@ -10,7 +10,7 @@ def subset(stack,n,target):
 
     for j in range(1,target+1):
         memo[0][j]=False
-
+    
 
     for i in range(1, n + 1):
         for j in range(1, target+ 1):

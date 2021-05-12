@@ -1,6 +1,5 @@
 for t in range(int(input())):
-
-
+  
     n,m=map(int,input().split())
     f=list(map(int,input().split()))
     c=list(map(int,input().split()))
@@ -34,3 +33,4 @@ for t in range(int(input())):
             flag="f"
 
     print("count",count)
+

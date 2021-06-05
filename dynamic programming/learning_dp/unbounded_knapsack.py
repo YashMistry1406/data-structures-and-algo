@@ -14,9 +14,9 @@ def unbounded_knapsack(capacity, n,values,weights):
                 dp[i][j]=0
 
             elif weights[i-1]<=j:
-                dp[i][j]=max(values[i]+dp[i][j-weights[i-1]],dp[i][j])
+                dp[i][j]=max(values[i-1]+dp[i][j-weights[i-1]],dp[i-1][j])
 
             else:
-                dp[i][j]=dp[i][j]
+                dp[i][j]=dp[i-1][j]
     return dp[n][capacity]
 print(unbounded_knapsack(capacity,n,values,weights))

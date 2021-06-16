@@ -1,5 +1,6 @@
 import java.util.Scanner
 
+
 fun main(args: Array<String>) {
     val array = intArrayOf(1, 2, 3, 4, 5)    
     for (element in array) {
@@ -12,8 +13,9 @@ fun main(args: Array<String>) {
     println(personobj.name)
     
 
-    val sc=Scanner(System.`in`)/*creating a variable of the scanner classjsut like java 
-                                */
+    val sc=Scanner(System.`in`)/*creating a variable of the scanner classjsut like java */
+
+
     
                             
                              

@@ -1,3 +1,5 @@
+#
+#https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2FxeEpra0RQTHhuVERaT0hWZG11aDM4SE42UXxBQ3Jtc0ttVktJYXVFcDFyR0tjeGE4dmw5TDBnRlZPT1F4bVRFaU5ySXFQZTFkR2Y2UzB6enJhbzJtemVRYUUxRzU0azEtQlQ4blM2TVZJcDByQ3pMVzFsVnJ5cnEzVVcwWFhNMWFZRWlrbUtaeGpvMzhDbTZ0SQ&q=https%3A%2F%2Fwww.geeksforgeeks.org%2Fpartition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum%2F
 def minisum_subet_diff(arr):
     su=sum(arr)
     n=len(arr)

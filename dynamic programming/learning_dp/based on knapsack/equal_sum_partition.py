@@ -1,3 +1,4 @@
+#https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1g3ZW1jVGVvdnBES2JYX0xpVWlheElqYWFGUXxBQ3Jtc0tuRGhtWW9oYk9Jc3hHMXo3SFdXUUMxejZvMFlFUW95SHB1SDYtYXV1VFVOLWk3Qmx5R093anJremNTZGhndUctQVhEM1RmQUJNaWQ2bGlwRlp0S1dGM24xcHc0Ukg4b1NiSEM0T0pmVVBxa1Y2LTdtYw&q=https%3A%2F%2Fwww.geeksforgeeks.org%2Fpartition-problem-dp-18%2F
 class Solution:
     def canPartition(self, arr: List[int]) -> bool:
         sum = 0

@@ -1,4 +1,4 @@
-
+#https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/
 values=list(map(int,input().split()))
 weights=list(map(int,input().split()))
 capacity=int(int(input()))

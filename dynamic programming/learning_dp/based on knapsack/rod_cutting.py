@@ -21,6 +21,7 @@
 #
 #if the current size is greater than the size of the rod we neglect it
 #
+#https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
 
 class Solution:
     def solve(self, prices, n):

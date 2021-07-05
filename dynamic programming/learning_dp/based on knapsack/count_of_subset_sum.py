@@ -1,6 +1,6 @@
 #the following code is just the variation in the subset()sum code 
 #the only change we have made here is changing the true statements to 1 and False to 0 
-#
+#https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2JEVHVjT1NoWkt2akowQUxfTlV5bm8ycE5fZ3xBQ3Jtc0tsaEk0ZV9DVllyZVo5ZkdILTNhRUwyOHItU1dvZ3VFZlJiS0J5eGZhY1hIcUwzc2F0bERvdXgyWDFrOFJoYUo5S08tQkV3Y1VMTTVwUVhuN2VkWmsxZHJyend4QzF0cUVxSWIycW1jR1l6UkRzSDdkWQ&q=https%3A%2F%2Fwww.geeksforgeeks.org%2Fcount-of-subsets-with-sum-equal-to-x%2F
 def subset(stack,n,target):
 
     memo=[[0 for _ in range(target+1)] for z in range(n+1)]

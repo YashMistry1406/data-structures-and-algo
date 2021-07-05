@@ -14,3 +14,4 @@ def coinchange(coins,amt):
         dp[i][j]=dp[i-1][j]
   return dp[n][amt]
 print(coinchange(coins,amount))
+#https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbG0zcmszLU9udEVwRktWYUpEVHdNdVVSdjZSd3xBQ3Jtc0tubWV3aEx3OFloSnhtTnNmdXdzNUk1TV9JcWJsQXZLd05hLXZ4Z0hoS0JtSWZNaldSNGZXUldQOUR6NXZ0WTdqcWFuVE5MeDNnUWtDWEZ3OVlsSDRWSlFkb3d4c2RjLWZpekV1M1dfNDZ3dmV2ZWZIVQ&q=https%3A%2F%2Fwww.geeksforgeeks.org%2Fcutting-a-rod-dp-13%2F

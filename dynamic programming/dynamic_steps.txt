@@ -1,0 +1,11 @@
+2 ways of solving a dynamic programming problem are
+i-tabulation(Bottom up)
+ii-memoization(top down)
+
+steps that could be followed to derive a top down approach :-
+1- think of a recursive solution 
+2- check which variables are changing on every function call (these will be the dimension of the 2d matrix
+  we would create for the top down approach)
+3-now code for the top down approach by creating a matrix of the changing variables
+  and fill the initial values of the matrix 
+4- 

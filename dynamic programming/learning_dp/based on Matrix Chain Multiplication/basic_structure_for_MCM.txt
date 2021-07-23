@@ -1,0 +1,8 @@
+basic structure for matrix chain multiplication 
+this are based on mcm
+1.palindrome partitioning 
+2.scramble string 
+3.egg dropping 
+4.evaluate expr to True
+
+
